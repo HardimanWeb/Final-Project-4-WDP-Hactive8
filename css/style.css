@@ -2,53 +2,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
+  font-family: 'Basic',sans-serif;
 }
 
 body {
   background-image: linear-gradient(#81d4fa, #2196f3);
 }
 
-.container {
-  margin-top: 40px;
+.container-f {
+  margin: 40px 80px ;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
-.content {
-  text-align: center;
+.kiri{
+  width: 70%;
+  background-image: url("../assets/gmbr-1.jpg");
+  background-size: cover;
 }
 
-.content img {
-  display: block;
-  margin: 0 auto;
-  width: 300px;
-  height: 200px;
+.desc{
+ color: white;
+ margin-left: 40px;
+ margin-bottom: 30px;
 }
 
-.content table {
-  margin: 0 auto;
+#descTemp{
+  font-size: 60px;
 }
 
+#descCity{
+  margin-top: -15px;
+  font-size: 28px;
+ 
+}
 .kanan {
-  border-radius: 30px;
   padding: 40px;
   background: #f6f8fd;
-  width: 450px;
-  height: 570px;
-  position: relative;
-  top: -50px;
+  height: 100%;
   box-shadow: 10px black;
-}
-
-.container img {
-  display: block;
-  width: 910px;
-  height: 570px;
-  position: relative;
-  left: 30px;
-  top: -50px;
+  width: 30%;
 }
 
 #InputButton {
@@ -57,16 +50,23 @@ body {
 
 .kanan input {
   border-radius: 50px;
-  padding: 15px;
-  border: none;
+  padding: 5px 20px;
   background-color: #e5e9f2;
+  border: none;
+ outline-color: #81d4fa;
+ outline-width: medium;
+}
+
+.kanan input::placeholder{
+  font-weight: 500;
+  font-size: 18px;
 }
 
 #SearchBtn {
   color: white;
   background-color: #2196f3;
-  margin-left: 5px;
-  padding: 15px;
+  margin-left: 10px;
+  padding: 13px;
   border-radius: 50%;
   border: none;
 }
@@ -76,5 +76,35 @@ body {
   background-color: var(--bs-table-bg);
   border-bottom-width: 1px;
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+ 
 }
 
+.content td{
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.content p{
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 700px) {
+  .container-f {
+    display: flex;
+    flex-direction: column; 
+    margin: 40px 30px;
+    height: 100%;
+  }
+  .kanan,.kiri,.kanan input{
+    width: 100%;
+  }
+}  
+  @media screen and (max-width: 1200px) {
+    .container-f {
+     margin: 50px 30px;
+    }
+    .kanan input{
+      width: 100%;
+    }
+  }
