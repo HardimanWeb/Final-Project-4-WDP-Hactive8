@@ -96,14 +96,14 @@ body {
     margin: 40px 30px;
     height: 100%;
   }
-  .kanan,.kiri,.kanan input{
-    width: 100%;
-  }
 }  
   @media screen and (max-width: 1200px) {
     .container-f {
      margin: 50px 30px;
     }
+       .kanan,.kiri,.kanan input{
+    width: 100%;
+  }
     .kanan input{
       width: 100%;
     }
