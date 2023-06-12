@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Basic',sans-serif;
+}
+
+body {
+  background-image: linear-gradient(#81d4fa, #2196f3);
+}
+
+.container-f {
+  margin: 40px 80px ;
+  display: flex;
+  height: 100vh;
+}
+
+.kiri{
+  width: 70%;
+  background-image: url("../assets/gmbr-1.jpg");
+  background-size: cover;
+}
+
+.desc{
+ color: white;
+ margin-left: 40px;
+ margin-bottom: 30px;
+}
+
+#descTemp{
+  font-size: 60px;
+}
+
+#descCity{
+  margin-top: -15px;
+  font-size: 28px;
+ 
+}
+.kanan {
+  padding: 40px;
+  background: #f6f8fd;
+  height: 100%;
+  box-shadow: 10px black;
+  width: 30%;
+}
+
+#InputButton {
+  display: flex;
+}
+
+.kanan input {
+  border-radius: 50px;
+  padding: 5px 20px;
+  background-color: #e5e9f2;
+  border: none;
+ outline-color: #81d4fa;
+ outline-width: medium;
+}
+
+.kanan input::placeholder{
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#SearchBtn {
+  color: white;
+  background-color: #2196f3;
+  margin-left: 10px;
+  padding: 13px;
+  border-radius: 50%;
+  border: none;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  background-color: var(--bs-table-bg);
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+ 
+}
+
+.content td{
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.content p{
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 700px) {
+  .container-f {
+    display: flex;
+    flex-direction: column; 
+    margin: 40px 30px;
+    height: 100%;
+  }
+} 
+  @media screen and (max-width: 1200px) {
+    .kanan,.kiri,.kanan input{
+      width: 100%;
+    }
+   
+    .container-f {
+     margin: 50px 30px;
+    }
+    .kanan input{
+      width: 100%;
+    }
+  }
